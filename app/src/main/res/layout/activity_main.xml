@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".MainActivity"
+    tools:deviceIds="wear">
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/timeOver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="\n       73."
+        android:textAlignment="textStart"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/timeLeft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundTint="#673AB7"
+        android:shadowColor="#E91E63"
+        android:text="\n\n37:37"
+        android:textAlignment="center"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/extraTimeRunning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n\n\n\n\n\n01:00"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/extraTime"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="\n\n\n\nNachspielzeit: 03:00"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/spielminute"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text=" \n\n\nSpielminute              "
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/white" />
+
+</androidx.wear.widget.BoxInsetLayout>
